@@ -2,6 +2,7 @@ import java.util.*;
 
 public class v2 {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
@@ -13,6 +14,7 @@ public class v2 {
         choos = scanner.next().toLowerCase();
 
         if (choos.equals("x")) {
+            
             System.out.println("1 | 2 | 3");
             System.out.println("4 | 5 | 6");
             System.out.println("7 | 8 | 9");
@@ -35,19 +37,26 @@ public class v2 {
                 }
 
                 ch = 0;
+                
                 while (ch == 0) {
+                    
                     o = random.nextInt(9);
+                    
                     if (zone[o] == null) {
+                        
                         zone[o] = "o";
                         ch = 1;
                         System.out.println("Computer placed 'o' at: " + (o + 1));
                         i++;
+                        
                     }
                 }
 
                 if (i == 9) {
+                    
                     System.out.println("Draw!");
                     break;
+                    
                 }
             }
         }
